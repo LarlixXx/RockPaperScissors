@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alkalami_regular"
+        android:text="Player 1"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/rock_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/paper_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/paper"
+
+        app:layout_constraintBottom_toTopOf="@+id/scissors_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/rock_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/rock"
+
+        app:layout_constraintBottom_toTopOf="@+id/paper_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/scissors_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/scissors"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp">
+
+    </ImageButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
